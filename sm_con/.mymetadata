@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="sm_con"
+  id="myeclipse.1453967438520"
+  context-root="/sm_con"
+  j2ee-spec="6.0"
+  archive="sm_con.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

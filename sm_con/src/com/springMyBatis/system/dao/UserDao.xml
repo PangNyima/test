@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.springMyBatis.system.dao.UserDao">  
+<select id="getUser" parameterType="com.springMyBatis.system.model.User" resultType="com.springMyBatis.system.model.User">  
+   SELECT * FROM testtable WHERE col1=#{col1} AND col2=#{col2}  
+</select>  
+<insert id="addUser" parameterType="com.springMyBatis.system.model.User" flushCache="true">  
+   INSERT INTO testtable (col1,col2,col3) VALUES (#{col1},#{col2},#{col3})  
+</insert>  
+<update id="updateUser" parameterType="com.springMyBatis.system.model.User">  
+    UPDATE  testtable SET col3=#{col3} WHERE col1=#{col1}  
+</update>  
+<delete id="deleteUser" parameterType="String">  
+    DELETE FROM testtable WHERE col1=#{col1}  
+</delete>  
+</mapper>
